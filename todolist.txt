@@ -1,1 +1,23 @@
 
+STARTUP SIM - TODO
+
+DONE
+[x] State moved into GameData (dataclass)
+[x] Crashes fixed: ATR name, handler inputs, printf, exit
+[x] Four commands work: show-cmd, bank-stat, prod-prog, exit
+
+NEXT SESSION: the month loop
+[ ] Decide: is revenue a stored box, or calculated each month (customers x price)?
+[ ] Write the 3-line end-month spec in plain words (what changes each month?)
+[ ] Then: end-month command, game over at 0 cash, win at 12 months
+
+PARKED (not now)
+[ ] Bad-input handling: unknown command, non-number, capital 0
+[ ] Clean-up: dead ATR/difficulty defaults, stray space in "Product Price Point"
+
+PROGRESS LOG
+2026-11-14 | State object + 4 commands | Overall 6.4
+Start: dataclass attempt that crashed on startup
+Now: state in GameData, all four commands run
+Gap: unknown commands crash; reasons for choices not written down
+Next: write the end-month spec in todolist.txt
